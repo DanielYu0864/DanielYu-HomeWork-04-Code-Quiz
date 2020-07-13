@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- div for past score -->
+    <div class="user">Past Score: <span id="user"></span></div>
+    <!-- div for score -->
+    <div class="header">
+        <div id="score" class="score hide">Your Score: <span class="score-number">0</span>
+        </div>
+        <br>
+        <div class="text-high-score hide">Input the player name:
+        <textarea class="high-score"></textarea>
+        <div id="Post-quiz"><button class="a1 btn">Submit</button></div>
+        </div>
+        <br>
+        <button id="restart" class="restartbtn btn  hide">Restart</button>
+
+    </div>
+    <!-- div container for all the questions and answer button -->
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+
+    </div>
+    <!-- div for time left display -->
+    <div class="timer">Time left: 180</div>
+
+<script src="script.js"></script>
+</body>
+</html>

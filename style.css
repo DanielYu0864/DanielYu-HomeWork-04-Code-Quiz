@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+/* root --hue set for all the color */
+:root {
+    --hue-neutral: 36;
+    --hue-wrong: 349;
+    --hue-correct: 219;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 40vw;
+    justify-content: center;
+    align-items: center;
+    /* use hsl() + --hue to display different color color between body and container*/
+    background-color: hsl(var(--hue), 100%, 20%);
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+    width: 100vw;
+    height: 40vw;
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+    width: 100vw;
+    height: 40vw;
+}
+.header {
+    text-align: center;
+}
+.score {
+    font-size: 80px;
+    color: blanchedalmond;
+}
+.restartbtn {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid; grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1.5px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    outline: none;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.btn:hover {
+    border:1.5px solid black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.timer, .user {
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 30vw;
+}
+.text-high-score {
+    color: whitesmoke;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* to hide the element */
+.hide {
+    display: none;
+}
