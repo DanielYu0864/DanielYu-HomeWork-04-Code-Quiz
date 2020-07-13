@@ -2,11 +2,11 @@
 
 ## Game explain
 
-This is a sample code quiz with 5 questions.
-When you click the start `button`, then the `timer` start counts
-When you click the correct `answer button`, then the `score` + 1 and background color turn blue
-When you click the wrong `answer button`, then the `seconds` - 15 and background color turn red
-When the `seconds` = 0 or answer all the question, then game end and display the `score` and `player` input
+* This is a sample code quiz with 5 questions.
+- When you click the start `button`, then the `timer` start counts
+- When you click the correct `answer button`, then the `score` + 1 and background color turn blue
+- When you click the wrong `answer button`, then the `seconds` - 15 and background color turn red
+- When the `seconds` = 0 or answer all the question, then game end and display the `score` and `player` input
 
 ### What I did
 
