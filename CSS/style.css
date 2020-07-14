@@ -13,12 +13,8 @@ body {
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
-    /* display: flex; */
     width: 100vw;
     height: 40vw;
-    /* justify-content: center;
-    align-items: center; */
-    /* use hsl() + --hue to display different color color between body and container*/
     background-color: hsl(var(--hue), 100%, 20%);
     font-family: 'Grenze Gotisch', cursive;
 }
@@ -97,14 +93,12 @@ body.wrong {
     font-size: 30px;
     color: whitesmoke;
     float: left;
-    /* margin-bottom: 30vw; */
 }
 
 .timer{
     font-size: 30px;
     color: whitesmoke;
     float: right;
-    /* margin-bottom: 30vw; */
 }
 .text-high-score {
     color: whitesmoke;
