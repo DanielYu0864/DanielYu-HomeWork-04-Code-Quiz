@@ -16,7 +16,7 @@ body {
     display: flex;
     width: 100vw;
     height: 40vw;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* use hsl() + --hue to display different color color between body and container*/
     background-color: hsl(var(--hue), 100%, 20%);

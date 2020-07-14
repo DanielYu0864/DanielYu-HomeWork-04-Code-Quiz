@@ -26,7 +26,7 @@ var seconds = 180; // 180 s
 function countdown() {
     questionTimer = setInterval(function() {
         seconds--;
-        timerEl.textContent = "Time left: " + seconds;
+        timerEl.textContent = `Time left: ${seconds} s`;
         if(seconds <= 1) {
             timerEl.textContent = "Time left: 0";
             console.log("Time's up");
