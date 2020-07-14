@@ -13,11 +13,11 @@ body {
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex; */
     width: 100vw;
     height: 40vw;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     /* use hsl() + --hue to display different color color between body and container*/
     background-color: hsl(var(--hue), 100%, 20%);
     font-family: 'Grenze Gotisch', cursive;
@@ -52,6 +52,7 @@ body.wrong {
     background-color: aliceblue;
     border-radius: 5px;
     padding: 10px;
+    margin: auto;
     box-shadow: 0 0 10px 2px;
 }
 
@@ -92,10 +93,18 @@ body.wrong {
     padding: 10px 20px;
 }
 
-.timer, .user {
+.user {
     font-size: 30px;
     color: whitesmoke;
-    margin-bottom: 30vw;
+    float: left;
+    /* margin-bottom: 30vw; */
+}
+
+.timer{
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    /* margin-bottom: 30vw; */
 }
 .text-high-score {
     color: whitesmoke;
